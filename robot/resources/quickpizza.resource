@@ -65,3 +65,28 @@ Recommendation Should Keep The Restrictions
     ${calories}=    Get Calories Per Slice
     Should Be True    ${calories} <= ${max calories}
     RETURN    ${tool}
+
+Rate The Pizza Without Logging In
+    [Documentation]    QP-01 step 5. Love it! asks for a login first.
+    Click Button    name:rate-5
+    Wait Until Element Contains    id:rate-result    Please log in first.
+
+Wait Until The Page Is Ready
+    [Documentation]    SvelteKit adds this element when its script runs.
+    Wait Until Page Contains Element    id:svelte-announcer
+
+Log In As Admin
+    [Documentation]    QP-01 step 6. Sign in on the admin page.
+    [Arguments]    ${user}    ${password}
+    Go To    ${URL}/admin
+    Wait Until The Page Is Ready
+    Input Text    id:username    ${user}
+    Input Password    id:password    ${password}
+    Click Button    css:button[type=submit]
+    Wait Until Page Contains    Latest pizza recommendations
+
+Admin List Should Show The Pizza
+    [Documentation]    QP-01 step 7. Find the pizza and its tool.
+    [Arguments]    ${name}    ${tool}
+    Wait Until Page Contains    ${name}
+    Element Should Contain    xpath://li[contains(.,'${name}')]    ${tool}
