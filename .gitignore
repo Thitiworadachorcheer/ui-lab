@@ -1,0 +1,14 @@
+﻿# libraries and build output of the tools
+target/
+.venv/
+node_modules/
+__pycache__/
+cypress/cypress/downloads/
+robot/output.xml
+robot/log.html
+robot/report.html
+robot/*.png
+# files that macOS and the editors add
+.DS_Store
+.idea/
+.vscode/
