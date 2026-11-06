@@ -9,3 +9,14 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 - Step 0.4, locator of Excluded tools: css=select
 - Step 0.4, locator of Must be vegetarian: id=default-checkbox
 - Step 0.4, locator of Custom Pizza Name: input#pizza-name
+- Step 0.5, pizza name, tool and calories of the run by hand: Lab Pizza 20261106-201500, Scissors, 480 calories
+
+| Step | Actual result | Pass or fail |
+|------|---------------|--------------|
+| 1 | The heading reads Looking to break out of your pizza routine? | Pass |
+| 2 | Max Calories per Slice, Excluded tools, Must be vegetarian and Custom Pizza Name appear | Pass |
+| 3 | The fields show 600, Knife selected, vegetarian checked, Lab Pizza 20261106-201500 | Pass |
+| 4 | Pizza name shows Lab Pizza 20261106-201500, Tool shows Scissors (not Knife), calories 480 (<= 600) | Pass |
+| 5 | The page shows message Please log in first. | Pass |
+| 6 | Navigated to /admin, signed in with admin/admin, page displays Latest pizza recommendations | Pass |
+| 7 | Found pizza Lab Pizza 20261106-201500 in list with tool Scissors | Pass |
