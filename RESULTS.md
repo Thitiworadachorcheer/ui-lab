@@ -20,3 +20,7 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 | 5 | The page shows message Please log in first. | Pass |
 | 6 | Navigated to /admin, signed in with admin/admin, page displays Latest pizza recommendations | Pass |
 | 7 | Found pizza Lab Pizza 20261106-201500 in list with tool Scissors | Pass |
+
+
+## Part 3: Robot Framework
+- robot --version: Robot Framework 7.5.1 (Python 3.13.11 on win32)
