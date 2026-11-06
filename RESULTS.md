@@ -24,3 +24,4 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.13.11 on win32)
+- Step 3.2, failure message for the wrong title: Title should have been 'Web Form' but was 'Web form'
