@@ -36,3 +36,4 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 - Step 4.7, the line of the admin list that shows your pizza: Lab Pizza 20261106-203935 (tool=Scissors, ingredients_number=6)
 - Step 4.8, run 1, result, duration and pizza name: Pass, 00:17, Lab Pizza 20261106-204314
 - Step 4.8, run 2, result, duration and pizza name: Pass, 00:23, Lab Pizza 20261106-204433
+- Step 4.9 (optional), browser and result: Microsoft Edge 156, both specs passed (All specs passed! 00:17)
