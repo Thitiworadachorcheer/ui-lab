@@ -31,3 +31,4 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 
 ## Part 4: Cypress
 - node --version, npm --version and npx cypress version: node v22.20.0, npm 10.9.3, Cypress package 16.2.1 (binary 16.2.1)
+- Step 4.3, failure message for the wrong title: Timed out retrying after 10000ms: expected 'Web form' to equal 'Web Form'
